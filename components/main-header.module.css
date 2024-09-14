@@ -1,0 +1,54 @@
+/* main-header.module.css */
+
+.header {
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between; /* Align logo left and nav links right */
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px; /* You can adjust this size or replace with an actual logo image */
+  font-weight: bold;
+  color: #333;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end; /* Align navigation links to the right */
+  margin: 0;
+  padding: 0;
+}
+
+.navItem {
+  margin: 0 10px;
+}
+
+.navLink {
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: #0070f3;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .navList {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navItem {
+    margin: 10px 0;
+  }
+}

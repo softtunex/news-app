@@ -1,0 +1,59 @@
+/* news.module.css */
+
+.pageTitle {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #222;
+  text-align: center;
+}
+
+.newsList {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Create responsive grid */
+  gap: 20px; /* Spacing between cards */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.newsItem {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for card depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.newsItem:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.imageWrapper {
+  height: 200px;
+  position: relative;
+}
+
+.newsItem span {
+  display: block;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+}
+
+.newsItem:hover span {
+  color: #0070f3; /* Change text color on hover */
+}
+
+@media (max-width: 600px) {
+  .newsItem span {
+    font-size: 16px;
+  }
+}
