@@ -9,14 +9,14 @@ export default function MainHeader() {
         <div className={styles.logo}>MyLogo</div>
       </Link>
       <ul className={styles.navList}>
-        {/* <li className={styles.navItem}>
-          <Link href="/" className={styles.navLink}>
-            Home
-          </Link>
-        </li> */}
         <li className={styles.navItem}>
           <Link href="/news" className={styles.navLink}>
             News
+          </Link>
+        </li>
+        <li className={styles.navItem}>
+          <Link href="/archive" className={styles.navLink}>
+            Archive
           </Link>
         </li>
       </ul>
