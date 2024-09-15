@@ -1,0 +1,123 @@
+/* archive.module.css */
+
+/* General container for page sections */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 12px;
+}
+
+/* Latest News Section */
+.latestNewsContainer {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
+}
+
+.latestNewsTitle {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+.latestNewsTitle::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #0070f3;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+/* Grid layout for news list */
+.newsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.newsItem {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.newsItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.newsItem img {
+  width: 100%;
+  height: auto;
+}
+
+.newsItemTitle {
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: #333;
+}
+
+/* Archive Links Navigation */
+.archiveNavbar {
+  background-color: #0070f3;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+}
+
+.archiveNavList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+
+.archiveNavItem {
+  margin: 10px;
+}
+
+.archiveNavLink {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 12px 30px;
+  background-color: #005bb5;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.archiveNavLink:hover {
+  background-color: #004099;
+  transform: translateY(-3px);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .archiveNavList {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .archiveNavItem {
+    margin: 10px 0;
+  }
+
+  .latestNewsTitle {
+    font-size: 28px;
+  }
+}

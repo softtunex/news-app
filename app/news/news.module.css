@@ -20,36 +20,62 @@
   list-style: none;
 }
 
+/* news.module.css */
+
+/* General News Item container */
 .newsItem {
   background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for card depth */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
-  cursor: pointer;
+  list-style: none; /* Remove default list style */
+  margin: 15px 0;
 }
 
 .newsItem:hover {
-  transform: translateY(-5px); /* Lift effect on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.newsItem a {
+  text-decoration: none;
+  color: inherit; /* Keep text color consistent */
+  display: block;
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+
+.newsItem a:hover {
+  color: #0070f3;
 }
 
 .imageWrapper {
-  height: 200px;
-  position: relative;
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #eaeaea;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
-.newsItem span {
-  display: block;
-  padding: 15px;
-  font-size: 18px;
-  font-weight: 500;
-  color: #333;
+.newsTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
   text-align: center;
+  color: #333;
 }
 
-.newsItem:hover span {
-  color: #0070f3; /* Change text color on hover */
+.newsTitle:hover {
+  color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .newsTitle {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 600px) {
