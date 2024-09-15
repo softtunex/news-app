@@ -61,7 +61,7 @@ export const DUMMY_NEWS = [
     slug: "business-advancement-online-store",
     title: "Business Advancement with Online Storefront",
     image: Img4,
-    date: "2024-09-16",
+    date: "2022-09-16",
     content: `
       As e-commerce continues to grow, having a professional online storefront is critical for any business 
       looking to expand its reach. Our e-commerce partner provides customizable storefronts that allow 
@@ -76,7 +76,7 @@ export const DUMMY_NEWS = [
     slug: "community-engagement",
     title: "Engage with the Community",
     image: Img5,
-    date: "2024-09-17",
+    date: "2022-01-17",
     content: `
       Being part of a community can greatly enrich your personal and professional life. Our platform allows 
       users to connect with like-minded individuals, join interest groups, and participate in discussions 
@@ -105,7 +105,7 @@ export const DUMMY_NEWS = [
     slug: "exclusive-discounts",
     title: "Exclusive Discounts",
     image: Img7,
-    date: "2024-09-19",
+    date: "2023-09-19",
     content: `
       Unlock exclusive discounts and offers when you use our platform. From special deals on electronics to 
       discounts on travel and dining, our users can enjoy a range of perks across various categories. Simply 
@@ -119,7 +119,7 @@ export const DUMMY_NEWS = [
     slug: "professional-networking",
     title: "Professional Networking",
     image: Img8,
-    date: "2024-09-20",
+    date: "2022-09-20",
     content: `
       Building a strong professional network is crucial for career growth. Our networking platform connects 
       professionals from various industries, allowing them to share ideas, collaborate on projects, and 
@@ -146,7 +146,7 @@ export const DUMMY_NEWS = [
     slug: "customer-support",
     title: "24/7 Customer Support",
     image: Img10,
-    date: "2024-09-22",
+    date: "2023-09-22",
     content: `
       We understand that customer support is essential, which is why we offer round-the-clock assistance to 
       our users. Whether you have a question about our services or need help with a technical issue, our 
