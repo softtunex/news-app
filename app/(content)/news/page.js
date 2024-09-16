@@ -1,16 +1,17 @@
+import { getAllNews } from "@/libs/news";
 import styles from "./news.module.css";
 import NewsList from "@/components/news-list";
-import { DUMMY_NEWS } from "@/dummy-news";
+// import { DUMMY_NEWS } from "@/dummy-news";
 
-const News = () => {
+export default function News() {
+  const news = getAllNews();
+
   return (
     <>
       <h2 className={styles.pageTitle}>News</h2>
       <ul className={styles.newsList}>
-        <NewsList news={DUMMY_NEWS} />
+        <NewsList news={news} />
       </ul>
     </>
   );
-};
-
-export default News;
+}

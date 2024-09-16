@@ -83,3 +83,41 @@
     font-size: 16px;
   }
 }
+
+/* Loading.module.css */
+
+/* Center the loader and text */
+.loaderContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full screen height */
+}
+
+/* Spinner Styles */
+.loader {
+  border: 6px solid #f3f3f3; /* Light grey */
+  border-top: 6px solid #0070f3; /* Blue */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite; /* Spin animation */
+}
+
+/* Text style */
+.loaderContainer p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Keyframes for spinner animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
