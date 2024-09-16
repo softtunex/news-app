@@ -2,10 +2,11 @@ import { DUMMY_NEWS } from "@/dummy-news";
 import Image from "next/image";
 import styles from "./news-details.module.css"; // Import the CSS module
 import { notFound } from "next/navigation";
+import { getNewsItem } from "@/libs/news";
 
-const NewsDetails = ({ params }) => {
+function NewsDetails({ params }) {
   const newsSlug = params.slug;
-  const newsItem = DUMMY_NEWS.find((newsItem) => newsItem.slug === newsSlug);
+  const newsItem = getNewsItem(newsSlug);
 
   return (
     <>
@@ -32,6 +33,6 @@ const NewsDetails = ({ params }) => {
       )}
     </>
   );
-};
+}
 
 export default NewsDetails;

@@ -2,6 +2,7 @@ import { getAvailableNewsYears, getNewsForYear } from "@/libs/news";
 import styles from "../../archive.module.css";
 import Link from "next/link";
 import NewsList from "@/components/news-list";
+import { Suspense } from "react";
 
 export default function FilteredNewsListPage({ params }) {
   const filter = params.year;
@@ -38,7 +39,7 @@ export default function FilteredNewsListPage({ params }) {
           </ul>
         </nav>
       </header>
-      {newsContent}
+      <Suspense fallback={<p>loading ...</p>}>{newsContent}</Suspense>
     </>
   );
 }
